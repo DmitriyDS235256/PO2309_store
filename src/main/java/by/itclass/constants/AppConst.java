@@ -20,5 +20,4 @@ public class AppConst {
     public static final String HOME_JSP ="/jsp/home.jsp";
     public static final String SET_PASS_JSP ="/jsp/set-pass/jsp";
     public static final String INDEX_JSP ="/index.jsp";
-
 }

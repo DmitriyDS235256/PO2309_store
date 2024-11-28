@@ -1,6 +1,9 @@
 package by.itclass.controllers;
 
 
+import by.itclass.model.services.CartService;
+import by.itclass.model.services.LaptopService;
+import by.itclass.model.services.TvService;
 import by.itclass.model.services.UserService;
 import com.sun.net.httpserver.spi.HttpServerProvider;
 import jakarta.servlet.ServletException;
@@ -14,10 +17,16 @@ import static by.itclass.constants.AppConst.MESSAGE_ATTR;
 
 public abstract class AbstractController extends HttpServlet {
     protected UserService userService;
+    protected TvService tvService;
+    protected LaptopService laptopService;
+    protected CartService cartService;
 
     @Override
     public void init() throws ServletException {
         userService = UserService.getInstance();
+        tvService = TvService.getInstance();
+        laptopService = LaptopService.getInstance();
+        cartService = CartService.getInstance();
     }
 
     @Override

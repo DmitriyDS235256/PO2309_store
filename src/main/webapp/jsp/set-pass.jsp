@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <jsp:include page="<%=MENU_JSP%>"/>
+    <img class="deffault-image" src="<%=BACKGROUND_IMAGE%>">
     <div class="form-box">
         <h2>Change Password</h2>
         <form method="post" action="<%=CHANGE_CONTROLLER%>">
             <input type="hidden" name="<%=ID_PARAM%>" value="${user.id}">
-            <input name="<%=LOGIN_PARAM%>" placeholder="Login" required>
             <input type="password" name="<%=PASS_PARAM%>" placeholder="NEW Password" required>
             <input type="submit" value="Chenge">
         </form>

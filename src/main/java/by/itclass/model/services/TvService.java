@@ -4,8 +4,7 @@ import by.itclass.model.dao.TvDao;
 import by.itclass.model.entities.Tv;
 import org.apache.commons.lang3.ArrayUtils;
 
-import java.sql.SQLException;
-import java.util.Arrays;
+
 import java.util.List;
 import java.util.Map;
 
@@ -29,9 +28,9 @@ public class TvService {
         if (allTvs.isEmpty()){
             return allTvs;
         }
-        var vendors = params.get(VENDER_PARAM);
+        var vendors = params.get(VENDOR_PARAM);
         var screens = params.get(SCREEN_PARAM);
-        var from = params.get(PRICE_FROME_PARAM)[0];
+        var from = params.get(PRICE_FROM_PARAM)[0];
         var to = params.get(PRICE_TO_PARAM)[0];
 
         return allTvs.stream()

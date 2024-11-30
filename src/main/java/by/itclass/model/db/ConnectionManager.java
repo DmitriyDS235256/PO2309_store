@@ -1,6 +1,5 @@
 package by.itclass.model.db;
 
-
 import lombok.SneakyThrows;
 
 import java.sql.Connection;

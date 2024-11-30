@@ -11,7 +11,7 @@ import java.util.Map;
 import static by.itclass.constants.AppConst.*;
 
 public class UserDao {
-    private static final String SELECT_USER = "SELECT id, name, email FROM user WERE login = ? AND password = ?";
+    private static final String SELECT_USER = "SELECT id, name, email FROM user WHERE login = ? AND password = ?";
     private static final String INSERT_USER = "INSERT INTO user(name, email, login, password) values (?, ?, ?, ?)";
     private static final String CHECK_USER = "SELECT id FROM user WHERE login = ?";
     private static final String CHANGE_PASS = "UPDATE user SET password = ? WERE id = ?";

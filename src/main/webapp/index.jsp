@@ -1,5 +1,5 @@
-<%@ page import="static by.itclass.constants.AppConst.MENU_JSP" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="static by.itclass.constants.AppConst.*" %>
 <html>
 <head>
     <title>Our Shop</title>

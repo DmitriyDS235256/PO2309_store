@@ -13,13 +13,13 @@
     <c:when test="${not empty laptops}">
         <c:forEach var="laptop" items="${laptops}">
         <div class="item-box">
-            <img class="small=img" src="/img/laptop/${laptop.vendor}-${laptop.model}.jpg">
-            <p>Vendor${laptop.vendor}</p>
-            <p>Model${laptop.model}</p>
-            <p>Price${laptop.price}byn.</p>
+            <img class="small-img" src="/img/laptop/${laptop.vendor}-${laptop.model}.jpg">
+            <p>Vendor ${laptop.vendor}</p>
+            <p>Model ${laptop.model}</p>
+            <p>Price ${laptop.price}byn.</p>
             <form method="post" action="<%=CART_CONTROLLER%>">
                 <input type="hidden" name="<%=CART_ACTION_PARAM%>" value="add">
-                <input type="hidden" name="<%=ITEM_PRICE_PARAM%>" value="2">
+                <input type="hidden" name="<%=ITEM_TYPE_PARAM%>" value="2">
                 <input type="hidden" name="<%=ITEM_ID_PARAM%>" value="${laptop.id}">
                 <input type="hidden" name="<%=ITEM_VENDOR_PARAM%>" value="${laptop.vendor}">
                 <input type="hidden" name="<%=ITEM_MODEL_PARAM%>" value="${laptop.model}">

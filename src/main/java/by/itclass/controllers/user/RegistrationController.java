@@ -17,7 +17,7 @@ public class RegistrationController extends AbstractController {
         if (userService.addUser(req.getParameterMap())) {
             redirect(resp, LOGIN_JSP);
         } else {
-            forward(req, resp, SET_PASS_JSP, "Registration is not successfully");
+            forward(req, resp,REG_JSP, "User not found");
         }
     }
 }

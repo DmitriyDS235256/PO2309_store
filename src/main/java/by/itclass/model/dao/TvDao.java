@@ -31,7 +31,7 @@ public class TvDao {
             var rs = ps.executeQuery();
             while (rs.next()){
                 var id = rs.getInt(ID_PARAM);
-                var vendor = rs.getString(VENDER_PARAM);
+                var vendor = rs.getString(VENDOR_PARAM);
                 var model = rs.getString(MODEL_PARAM);
                 var screen = rs.getInt(SCREEN_PARAM);
                 var price = rs.getDouble(PRICE_PARAM);

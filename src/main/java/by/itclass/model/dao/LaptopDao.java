@@ -31,7 +31,7 @@ public class LaptopDao {
             var rs = ps.executeQuery();
             while (rs.next()){
                 var id = rs.getInt(ID_PARAM);
-                var vendor = rs.getString(VENDER_PARAM);
+                var vendor = rs.getString(VENDOR_PARAM);
                 var model = rs.getString(MODEL_PARAM);
                 var cpu = rs.getString(CPU_PARAM);
                 var memory = rs.getInt(MEMORY_PARAM);

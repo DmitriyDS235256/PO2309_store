@@ -15,7 +15,7 @@ public class LaptopController extends AbstractController {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         var laptops = laptopService.getLaptops(req.getParameterMap());
-        req.setAttribute(LAPTOP_ATTR, laptops);
+        req.setAttribute(LAPTOPS_ATTR, laptops);
         forward(req, resp, LAPTOP_PAGE_JSP);
     }
 }
